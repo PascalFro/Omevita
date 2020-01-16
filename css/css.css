@@ -1,0 +1,416 @@
+/*
+CSS du site omevita
+*/
+/* 
+    Created on : 28 janv. 2019, 13:47:40
+    Author     : exam
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.25rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+.title {
+
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+p {
+    padding-top: 1rem;
+}
+header {
+    width: 100%;
+    background-color: #feffff;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.main-nav, .main-nav a{
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+/*
+Menu et sous menu
+*/
+
+.menu {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #feffff;
+    min-width: 150px;
+    z-index: 1;
+    text-align: left;
+}
+.menu-content a:hover{
+    color: #f26628; 
+}
+.menu:hover .menu-content {
+    display: block;
+}
+.menu:hover{
+    background-color: #f26628;
+}
+ul, li {
+    list-style-type: none;
+}
+li {
+    padding-top: 1rem;
+}
+a {
+    text-decoration: none;   
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.no_row {
+    display: inline-block;
+}
+.align-bottom {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.block {
+    display: block;
+}
+.slider {
+    top: 0;
+}
+a {
+    color: #333333;
+}
+.cta {
+    background-color: #efefef;
+    position: absolute;
+    text-decoration: none;
+    color: #333333;
+    bottom: 0%;
+    left: 0%;
+    transform: translateY(50%);
+    transform: translateX(0%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.875rem;         
+}
+.cta:hover {
+    color: #f26628;
+}
+.btn {
+    background-color: #efefef;
+    color: #333333;
+    left: 0;
+    border: solid 1px #333333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.a:hover {
+    color: #f26628;
+
+}
+.btn a:hover, .btn:hover {
+    background-color: #f26628;
+    color: #ffffff;
+}
+footer a:hover {
+    color: #ffffff;
+}
+footer nav a {
+    display: block;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+/*
+Images
+*/
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.align-left {
+    align-content: flex-end;
+}
+.flex-start {
+    align-self: flex-start;
+}
+/*
+Alignements
+*/
+
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.justify {
+    text-align: justify;
+}
+.right {
+    text-align: right;
+}
+.align-flex-end {
+    align-items: flex-end;
+}
+/*
+Marges
+*/
+.padding-demirem {
+    padding: 0.5rem;
+}
+.padding-1rem {
+    padding: 1rem;
+}
+.padding-top-1rem {
+    padding-top: 1rem;
+}
+.padding-top-5rem {
+    padding-top: 4rem;
+}
+.padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+.no-padding-top {
+    padding-top: 0;
+}
+/*
+Position
+*/
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.no_fixed {
+    position: static;
+}
+/*
+Taille de police
+*/
+.font-size-30px {
+    font-size: 1.875rem;
+}
+.upper {
+    text-transform: uppercase;
+}
+/*
+Couleurs
+*/
+.color-f26628-orange {
+    color: #f26628;
+}
+.bg-f8a36c {
+    background-color: #f8a36c;
+}
+.bg-green-9ad7d0 {
+    background-color: #9ad7d0;
+}
+/*
+Largeurs
+*/
+.width-1200 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-12 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-9 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-8 {
+    width: 66.66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-7 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-6 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-5 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-4 {
+    width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-3 {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-2 {
+    width: 16.66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Formulaire
+*/
+bg-green-9ad7d0 {
+    background-color: #9ad7d0;
+}
+label, input, textarea, select {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+label, textarea {
+    padding: 1rem;
+    font-weight: bold;
+}
+input {
+    height: 30px;
+    width: 250px;
+}
+
+.input-error {
+    background-color: #ff0000;
+}
+.p-error {
+    color: #ff0000;
+}
+/*
+debug
+*/
+.debug {
+    color : #ffffff;
+}
+.message {
+    color: #ff0000;
+}
+/*
+Tables
+*/
+table {
+    width: 100%;
+}
+table, tr, td, th {
+    border: 1px solid #333333;
+}
+
+/*
+Sprite
+*/
+.sprite {
+    background-image: url('../img/css_sprites.png');
+    display: block;
+}
+.bg-menu {
+    width: 30px;
+    height: 30px;
+    background-position: -114px -10px;
+}
+.bg-right_arrow {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+.bg-twitter {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -10px;
+}
+.bg-back {
+    width: 30px;
+    height: 30px;
+    background-position: -114px -60px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+.bg-back_to_top {
+    width: 30px;
+    height: 30px;
+    background-position: -10px -114px;
+    position: fixed;
+    z-index: 5;
+    bottom: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.bg-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -62px;
+}
+.bg-home:hover {
+    width: 30px;
+    height: 30px;
+    background-position: -60px -114px;
+}
+.bg-home {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -62px;
+}
+/*
+Gestion de la version smartphone
+*/
+
+@media only screen and (max-width: 420px) {
+ 
+.small-12 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+

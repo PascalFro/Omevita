@@ -1,0 +1,312 @@
+/*
+CSS du site omevita
+*/
+/* 
+    Created on : 28 janv. 2019, 13:47:40
+    Author     : exam
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.25rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+.title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+p {
+    padding-top: 1rem;
+}
+header {
+    width: 100%;
+    background-color: #feffff;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+nav, nav a{
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+
+ul, li {
+    list-style-type: none;
+    text-align: center;
+}
+a {
+    text-decoration: none;   
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: flex-end;
+}
+.hide {
+    display: none;
+}
+.slider {
+    top: 0;
+}
+a {
+    color: #333333;
+}
+.cta {
+    background-color: #efefef;
+    position: absolute;
+    text-decoration: none;
+    color: #333333;
+    bottom: 0%;
+    left: 0%;
+    transform: translateY(50%);
+    transform: translateX(0%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.875rem;         
+}
+.cta:hover {
+    color: #f26628;
+}
+.btn {
+    background-color: #efefef;
+    color: #333333;
+    font-weight: bold;
+    left: 0;
+    font-weight: bold;
+}
+.a:hover {
+    color: #f26628;
+
+}
+.btn a:hover, .btn:hover {
+    background-color: #f26628;
+    color: #ffffff;
+}
+/*
+Images
+*/
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.align-left {
+    align-content: flex-end;
+}
+.flex-start {
+    align-self: flex-start;
+}
+/*
+Alignements
+*/
+
+.justify-between {
+    justify-content: space-between;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.justify {
+
+    text-align: justify;
+}
+.right {
+    text-align: right;
+}
+.align-flex-end {
+    align-items: flex-end;
+}
+/*
+Marges
+*/
+.padding-1rem {
+    padding: 1rem;
+}
+.padding-top-1rem {
+    padding-top: 1rem;
+}
+.padding-top-5rem {
+    padding-top: 5rem;
+}
+.padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+/*
+Position
+*/
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+/*
+Taille de police
+*/
+.font-size-30px {
+    font-size: 1.875rem;
+}
+.upper {
+    text-transform: uppercase;
+}
+/*
+Couleurs
+*/
+.color-f26628-orange {
+    color: #f26628;
+}
+.bg-f8a36c {
+    background-color: #f8a36c;
+}
+/*
+Largeurs
+*/
+.width-1200 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-12 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-9 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-8 {
+    width: 66.66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-7 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-6 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-5 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-4 {
+    width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-3 {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.large-2 {
+    width: 16.66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
+Sprite
+*/
+.sprite {
+    background-image: url('../img/css_sprites.png');
+    display: block;
+}
+.bg-menu {
+    width: 30px;
+    height: 30px;
+    background-position: -114px -10px;
+}
+.bg-right_arrow {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+.bg-twitter {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -10px;
+}
+.bg-back {
+    width: 30px;
+    height: 30px;
+    background-position: -114px -60px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+.bg-back_to_top {
+    width: 30px;
+    height: 30px;
+    background-position: -10px -114px;
+}
+.bg-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -62px;
+}
+.bg-home:hover {
+    width: 30px;
+    height: 30px;
+    background-position: -60px -114px;
+}
+.bg-home {
+    width: 32px;
+    height: 32px;
+    background-position: -62px -62px;
+}
+/*
+Gestion de la version smartphone
+*/
+
+@media only screen and (max-width: 420px) {
+ 
+.small-12 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
