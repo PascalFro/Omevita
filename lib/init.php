@@ -18,4 +18,4 @@ include "classes/administrateur.php";
 
 // Connexion à la base de données
 global $bdd;
-$bdd = new PDO("mysql:host=pascalfrpjperso.mysql.db;dbname=pascalfrpjperso;charset=UTF8", "pascalfrpjperso", "Filles2401");
+$bdd = new PDO("mysql:host=xxx;dbname=xxx;charset=UTF8", "xxx", "xxx");
